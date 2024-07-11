@@ -1,171 +1,58 @@
 .container {
+  height: 100dvh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: $light-grayish-cyan;
-}
-
-.title {
-  width: 5rem;
-  letter-spacing: 0.5rem;
-  word-break: break-all;
+  padding: 0 1.5rem;
+  background-color: $very-dark-blue;
 }
 
 /*
-White Card
+Grey Card
 */
 .card {
-  display: grid;
-  max-width: 57.5rem;
-  background-color: $white;
+  display: flex;
+  flex-direction: column;
+  max-width: 25.75rem;
+  border-radius: 1rem;
+  background-color: $darker-blue;
+}
 
-  &__form {
+.rating {
+  &__button_group {
     display: flex;
-    flex-direction: column;
-    gap: 2rem;
-  }
-
-  &__results {
-    display: flex;
-    flex-direction: column;
     justify-content: space-between;
-    border-radius: 1rem;
-    background-color: $very-dark-cyan;
-    color: $white;
   }
 }
 
-/*
-Tip Selection
-*/
-.button_select {
+.text {
   display: grid;
   gap: 1rem;
-
-  .custom_option {
-    width: 100%;
-    cursor: pointer;
-    padding: 0.5rem 0;
-    border: none;
-    border-radius: 0.5rem;
-    outline-color: transparent;
-    background-color: $very-light-grayish-cyan;
-    color: $very-dark-cyan;
-    font: inherit;
-    font-size: $font-h1-s;
-    text-align: center;
-  }
-
-  .selected {
-    background-color: $strong-cyan;
-  }
-
-  label {
-    cursor: pointer;
-    -webkit-appearance: button;
-    padding: 0.5rem 0;
-    border-radius: 0.5rem;
-    background-color: $very-dark-cyan;
-    color: $white;
-    font-size: $font-h1-s;
-    text-align: center;
-
-  }
-
-  label.selected {
-    background-color: $strong-cyan;
-    color: $very-dark-cyan;
-  }
-
-
-  input[type="radio"] {
-    display: none;
-  }
 }
 
 /*
-Form Labels
+Round Button for Star and Rating Group
 */
-.input_labels {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-/*
-Form Text Input Fields
-*/
-.input_field {
-  position: relative;
-
-  img {
-    position: absolute;
-    left: 1rem;
-    top: 1rem;
-  }
-}
-
-.text_field {
-  width: 100%;
-  height: 3rem;
-  padding: 0.5rem 1rem;
+.round_button {
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
   border: none;
-  border-radius: 0.5rem;
-  outline-color: transparent;
-  background-color: $very-light-grayish-cyan;
-  font: inherit;
-  font-size: $font-h1-s;
-  text-align: right;
-}
+  background-color: $dark-blue;
+  object-position: center;
+  color: $light-grey;
 
-// For Webkit browsers
-input[type=number]::-webkit-outer-spin-button,
-input[type=number]::-webkit-inner-spin-button {
-  -webkit-appearance: none; // remove up and down arrows for number fields
-  margin: 0;
-}
-
-// For Firefox
-input[type=number] {
-  -moz-appearance: textfield;
-}
-
-/*
-Dark Card with Results
-*/
-.result {
-  display: flex;
-  justify-content: space-between;
-  padding: 1rem 0;
-
-  &__text {
-    p {
-      font-size: $font-s;
-      opacity: 70%;
-    }
-  }
-
-  &__value {
-    color: $strong-cyan;
+  &:hover {
+    cursor: pointer;
+    background-color: $orange;
+    color: $very-dark-blue;
   }
 }
 
-/*
-Errors
-*/
-.error-field {
-  outline: 1px solid orangered;
-}
-.hide-error {
-  display: none;
-}
-.error-message {
-  display: block;
-  color: orangered;
-  font-size: $font-s;
-  text-align: right;
-  margin: 0;
+.selected {
+  background-color: $white;
+  color: $very-dark-blue;
 }
 
 /*
@@ -174,10 +61,18 @@ Button
 button {
   border-style: none;
   width: 100%;
-  padding: 1rem;
-  border-radius: 0.5rem;
-  background-color: $strong-cyan;
+  padding: 0.75rem;
+  border-radius: 2rem;
+  background-color: $orange;
   font: inherit;
+  font-weight: $font-weight-m;
+  text-transform: uppercase;
+  transition: background-color 300ms ease-in-out;
+
+  &:hover {
+    cursor: pointer;
+    background-color: $white;
+  }
 }
 
 

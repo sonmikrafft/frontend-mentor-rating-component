@@ -1,58 +1,24 @@
 @media (max-width: 87.4375em){
-  h1 {
-    font-size: $font-h1-s;
-  }
-  .title {
-    margin: 2.5rem 0;
-  }
   .card {
-    grid-template-columns: 1fr;
-    gap: 1rem;
-    padding: 2rem 1.5rem;
-    border-top-left-radius: 1.5rem;
-    border-top-right-radius: 1.5rem;
-
-    &__form {
-      padding: 0 0.5rem 2rem 0.5rem;
-    }
-
-    &__results {
-      padding: 1.5rem;
-    }
+    gap: 1.5rem;
+    padding: 1.5rem;
   }
 
-  .button_select {
-    grid-template-columns: 1fr 1fr;
+  .round_button {
+    height: 2.5rem;
+    width: 2.5rem;
   }
 }
 
 @media (min-width: 87.5em){
-  h1 {
-    font-size: $font-h1-l;
-  }
-  .container {
-    height: 100vh;
-  }
-  .title {
-    margin: 5.5rem 0;
-  }
   .card {
-    grid-template-columns: 1fr 1fr;
     gap: 2rem;
-    padding: 2rem;
-    border-radius: 1.5rem;
-
-    &__form {
-      padding: 1rem;
-    }
-
-    &__results {
-      padding: 2.5rem;
-    }
+    padding: 2rem 2.5rem;
   }
 
-  .button_select {
-    grid-template-columns: 1fr 1fr 1fr;
+  .round_button {
+    height: 2.875rem;
+    width: 2.875rem;
   }
 }
 

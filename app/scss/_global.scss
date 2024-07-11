@@ -12,17 +12,15 @@ body {
   padding: 0;
   text-align: left;
   font-size: $font-m;
-  font-family: "Space Mono", sans-serif;
+  font-family: "Overpass", sans-serif;
   font-weight: $font-weight-s;
-  color: $very-dark-cyan;
+  color: $light-grey;
   line-height: 1.5;
 
   h1 {
-    margin: 0;
-  }
-
-  h2 {
-    font-size: $font-h2;
+    font-size: $font-h1;
+    font-weight: $font-weight-m;
+    color: $white;
     margin: 0;
   }
 
@@ -36,7 +34,7 @@ body {
     color: black;
 
     a {
-      color: $strong-cyan;
+      color: $orange;
     }
   }
 }

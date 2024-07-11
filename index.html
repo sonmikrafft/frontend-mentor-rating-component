@@ -6,7 +6,10 @@
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
 
-  <!-- Font XX -->
+  <!-- Font Overpass -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="app/scss/style.css">
   <script defer src="./app/js/script.js" ></script>
@@ -16,30 +19,37 @@
 </head>
 <body>
 
-  <!-- Rating state start -->
+<main class="container">
 
-  How did we do?
+    <!-- Rating State -->
+    <div id=rating_card class="card rating">
+      <div class="rating__image round_button" >
+        <img src="images/icon-star.svg" alt="Star Icon">
+      </div>
+      <div class="text">
+        <h1>How did we do?</h1>
+        <p>Please let us know how we did with your support request. All feedback is appreciated
+          to help us improve our offering!</p>
+      </div>
+      <form id="form" class="rating__button_group"></form>
+      <button id="submitBtn">Submit</button>
+    </div>
 
-  Please let us know how we did with your support request. All feedback is appreciated 
-  to help us improve our offering!
-
-  1 2 3 4 5
-
-  Submit
-
-  <!-- Rating state end -->
-
-  <!-- Thank you state start -->
-
-  You selected <!-- Add rating here --> out of 5
-
-  Thank you!
-
-  We appreciate you taking the time to give a rating. If you ever need more support, 
-  don’t hesitate to get in touch!
-
-  <!-- Thank you state end -->
-
+    <!-- Confirmation State -->
+    <div id="confirmation_card" class="card confirmation">
+      <div class="confirmation__image">
+        <img src="images/illustration-thank-you.svg" alt="Thank You Illustration">
+      </div>
+      <div class="confirmation__result">
+        You selected <span id="result">1</span> out of 5
+      </div>
+      <div class="text">
+        <h1>Thank you!</h1>
+        <p>We appreciate you taking the time to give a rating. If you ever need more support,
+          don’t hesitate to get in touch!</p>
+      </div>
+    </div>
+</main>
 
   <footer>
     <p class="attribution">

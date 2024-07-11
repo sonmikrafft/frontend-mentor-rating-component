@@ -10,7 +10,6 @@ This is a solution to the [Interactive rating component challenge on Frontend Me
 - [My process](#my-process)
   - [Built with](#built-with)
   - [What I learned](#what-i-learned)
-  - [Continued development](#continued-development)
   - [Useful resources](#useful-resources)
 - [Author](#author)
 
@@ -28,13 +27,13 @@ Users should be able to:
 ### Screenshot
 
 ![Desktop](./screenshots/desktop.png)
-![Desktop Error](./screenshots/desktop_error.png)
+![Desktop Confirmation](./screenshots/desktop_confirmation.png)
 ![Mobile](./screenshots/mobile.png)
 
 ## My process
 
-### Built with
-- 
+### Built With
+
 - HTML, SCSS, JS
 - Mobile-first workflow
 - Webstorm with Simple Hot Reload Server (install: `npm install -g simple-hot-reload-server`, start: `hrs`) and File Watcher with SCSS for building CSS
@@ -45,38 +44,29 @@ Use this section to recap over some of your major learnings while working throug
 
 To see how you can add code snippets, see below:
 
-```html
-<h1>Some HTML code I'm proud of</h1>
-```
+- Dynamic Height of Container for any Device 
 ```css
-.proud-of-this-css {
-  color: papayawhip;
+.container {
+  height: 100dvh;
 }
 ```
-```js
-const proudOfThisFunc = () => {
-  console.log('🎉')
-}
-```
-
-
-### Continued development
-
-Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect.
-
-**Note: Delete this note and the content within this section and replace with your own plans for continued development.**
 
 ### Useful resources
 
-- []()
-- []()
-- []()
-- []()
-- []()
-- []()
-- 
-## Author
+- [Accessibility Principles](https://www.w3.org/WAI/fundamentals/accessibility-principles/)
+- [HTML: A good basis for accessibility](https://developer.mozilla.org/en-US/docs/Learn/Accessibility/HTML)
+- [Accessible heading structure](https://www.a11yproject.com/posts/how-to-accessible-heading-structure/)
+- [Farbe und Kontrast](https://web.dev/learn/accessibility/color-contrast?hl=de)
+- [What’s the alternative? How to write good alt text](https://design102.blog.gov.uk/2022/01/14/whats-the-alternative-how-to-write-good-alt-text/)
+- [Keyboard](https://developer.mozilla.org/en-US/docs/Web/Accessibility/Understanding_WCAG/Keyboard)
+- [Keyboard Compatibility](https://www.w3.org/WAI/perspective-videos/keyboard/)
+- [Captions, Transcripts, and Audio Descriptions](https://webaim.org/techniques/captions/)
+- [Links](https://design.homeoffice.gov.uk/accessibility/links)
+- [Accessible Icon Buttons](https://www.sarasoueidan.com/blog/accessible-icon-buttons/)
+- [Forms](https://web.dev/learn/accessibility/forms?hl=de)
 
+
+## Author
 
 - Github - [Sonja Krafft](https://www.github.com/sonmikrafft)
 - Frontend Mentor - [@sonmikrafft](https://www.frontendmentor.io/profile/sonmikrafft)
